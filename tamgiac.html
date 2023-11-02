@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi = "";
+    chuoi += "<table >"
+    for (let i = 0; i <= 5; i++) {
+        chuoi += "<tr>";
+        let dem = i;
+        while(dem > 0){
+            chuoi += "<td>*</td>";
+            dem--;
+        }
+        chuoi += "</tr>";
+    }
+    chuoi += "</table>";
+    chuoi += "<table >"
+    for (let i = 5; i > 0; i--) {
+        chuoi += "<tr>";
+        let dem = i;
+        while(dem > 0){
+            chuoi += "<td>*</td>";
+            dem--;
+        }
+        chuoi += "</tr>";
+    }
+    chuoi += "</table>";
+    document.write(chuoi);
+
+    //in hinh chu nhat
+    let hinhcn = "";
+    for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= 20; j++) {
+            if(i == 1 || j==1 || j == 20 || i == 10){
+                hinhcn+= "*";
+            }
+            else
+            {
+                hinhcn += " &nbsp;";
+            }
+        }
+        hinhcn += "<br>"
+
+    }
+    document.write(hinhcn);
+</script>
+</body>
+</html>

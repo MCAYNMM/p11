@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let x = 3;
+        let dem = 1;
+
+        while(dem <= 20){
+            let kq = true;
+            for (let i = 2; i < x; i++) {
+                if(x % i == 0){
+                    kq = false;
+                    break;
+                }
+            }
+            if(kq){
+                document.write(x + "<br>");
+                dem++;
+            }
+            x++;
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("nhap a")
+        let s = 0;
+        for(let i = 0; i<a; i++){
+            if(a % i ==0 && i % 2 !=0){
+                s = i;
+            }
+        }
+        document.write(" uoc lon nhat " + s);
+        let t = a;
+        while(1){
+            t++;
+            if(t % a ==0 && t %2 ==0){
+                document.write("boi nho nhat " + t)
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
